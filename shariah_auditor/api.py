@@ -91,15 +91,11 @@ def health():
 @app.post("/audit/start")
 async def start_audit(req: StartAuditRequest, background: BackgroundTasks):
     """
-    Creates a Supabase record and starts the audit pipeline in the background.
+    Starts the audit pipeline in the background.
+    The Supabase record is created by the Next.js API route before this is called,
+    so we skip creation here and go straight to running the pipeline.
     Returns immediately — the frontend polls /audit/{id} for live status.
     """
-    if await _audit_exists(req.contract_id):
-        raise HTTPException(409, f"Audit already exists for {req.contract_id}")
-
-    # Create initial record in Supabase
-    audit_db.create_audit(req.contract_id, req.contract_text)
-
     # Run the full pipeline in the background (non-blocking)
     background.add_task(_run_pipeline, req.contract_id, req.contract_text)
 
@@ -223,16 +219,3 @@ async def _run_pipeline(contract_id: str, contract_text: str):
         audit_db.log_event(contract_id, "error", {"message": str(e)})
         if contract_id in _active_graphs:
             del _active_graphs[contract_id]
-
-
-async def _audit_exists(contract_id: str) -> bool:
-    try:
-        from supabase import create_client
-        client = create_client(
-            os.environ.get("SUPABASE_URL", ""),
-            os.environ.get("SUPABASE_SERVICE_KEY", ""),
-        )
-        result = client.table("audits").select("contract_id").eq("contract_id", contract_id).execute()
-        return bool(result.data)
-    except Exception:
-        return False

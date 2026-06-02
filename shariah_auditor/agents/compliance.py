@@ -6,7 +6,7 @@ MIGRATION: Replaced Anthropic SDK with lib.llm.chat(). RAG unchanged.
 
 import json
 from state import AuditState
-from lib.llm import chat
+from lib.llm import chat, extract_json
 from lib.rag import query_policy
 
 BASE_SYSTEM_PROMPT = """You are a Shariah compliance auditor for an Islamic bank regulated by BNM Malaysia.
@@ -49,7 +49,7 @@ def run_compliance_agent(state: AuditState) -> dict:
         max_tokens=4000,
     )
 
-    compliance_report = json.loads(_clean_json(raw))
+    compliance_report = json.loads(extract_json(raw))
     by_status = _count_by_status(compliance_report)
     print(f"   ✓ {len(compliance_report)} clauses — "
           f"✅ {by_status['compliant']} compliant  "
@@ -64,13 +64,3 @@ def _count_by_status(report):
     for r in report:
         counts[r.get("status", "ambiguous")] = counts.get(r.get("status", "ambiguous"), 0) + 1
     return counts
-
-
-def _clean_json(text):
-    text = text.strip()
-    if text.startswith("```"):
-        parts = text.split("```")
-        text = parts[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return text.strip()

@@ -7,7 +7,7 @@ System prompt and output format unchanged.
 
 import json
 from state import AuditState
-from lib.llm import chat
+from lib.llm import chat, extract_json
 
 SYSTEM_PROMPT = """You are a legal clause extraction specialist for Islamic finance contracts,
 specifically Murabaha agreements regulated by Bank Negara Malaysia (BNM).
@@ -48,16 +48,6 @@ def run_extraction_agent(state: AuditState) -> dict:
         max_tokens=3000,
     )
 
-    clauses = json.loads(_clean_json(raw))
+    clauses = json.loads(extract_json(raw))
     print(f"   ✓ Extracted {len(clauses)} clauses: {[c['clause_type'] for c in clauses]}")
     return {"clauses": clauses}
-
-
-def _clean_json(text: str) -> str:
-    text = text.strip()
-    if text.startswith("```"):
-        parts = text.split("```")
-        text = parts[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return text.strip()

@@ -106,11 +106,11 @@ ALTER TABLE audit_events ENABLE ROW LEVEL SECURITY;
 
 -- Allow full access via service role key (used by Next.js API routes
 -- and Python backend — never exposed to the browser)
-CREATE POLICY IF NOT EXISTS "Service role full access — audits"
+CREATE POLICY "Service role full access — audits"
   ON audits FOR ALL
   USING (true) WITH CHECK (true);
 
-CREATE POLICY IF NOT EXISTS "Service role full access — audit_events"
+CREATE POLICY "Service role full access — audit_events"
   ON audit_events FOR ALL
   USING (true) WITH CHECK (true);
 

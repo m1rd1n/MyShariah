@@ -11,7 +11,6 @@
  * every 2 seconds while the audit is running, then stops once done.
  */
 
-import { use } from 'react'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import useSWR from 'swr'
@@ -23,8 +22,8 @@ const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 const RUNNING_PHASES = ['queued', 'extraction', 'compliance', 'devils_advocate', 'simulator']
 
-export default function AuditStatusPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params)
+export default function AuditStatusPage({ params }: { params: { id: string } }) {
+  const { id } = params
   const router  = useRouter()
 
   // Poll every 2s while audit is running; stop when terminal phase reached

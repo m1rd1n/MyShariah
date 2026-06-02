@@ -11,7 +11,7 @@
  * LangGraph pipeline with the officer's decision.
  */
 
-import { use, useState } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import useSWR from 'swr'
 import RiskMeter from '@/components/RiskMeter'
@@ -19,8 +19,8 @@ import AuditPhaseTracker from '@/components/AuditPhaseTracker'
 
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
-export default function ReviewPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params)
+export default function ReviewPage({ params }: { params: { id: string } }) {
+  const { id } = params
   const router  = useRouter()
 
   const { data: audit, error } = useSWR(`/api/audit/${id}`, fetcher)

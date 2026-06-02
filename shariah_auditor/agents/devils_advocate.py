@@ -6,7 +6,7 @@ MIGRATION: Replaced Anthropic SDK with lib.llm.chat(). RAG + guardrail unchanged
 
 import json
 from state import AuditState
-from lib.llm import chat
+from lib.llm import chat, extract_json
 from lib.rag import query_policy
 
 MAX_ITERATIONS = 3
@@ -71,18 +71,8 @@ def run_devils_advocate_agent(state: AuditState) -> dict:
         max_tokens=4000,
     )
 
-    findings = json.loads(_clean_json(raw))
+    findings = json.loads(extract_json(raw))
     by_sev   = {s: sum(1 for f in findings if f.get("severity") == s) for s in ["high","medium","low"]}
     print(f"   ✓ Pass {iterations + 1} — 🔴 {by_sev['high']} high  🟡 {by_sev['medium']} medium  🟢 {by_sev['low']} low")
 
     return {"adversarial_findings": findings, "devils_advocate_iterations": iterations + 1}
-
-
-def _clean_json(text):
-    text = text.strip()
-    if text.startswith("```"):
-        parts = text.split("```")
-        text = parts[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return text.strip()

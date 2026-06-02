@@ -6,7 +6,7 @@ MIGRATION: Replaced Anthropic SDK with lib.llm.chat(). Logic unchanged.
 
 import json
 from state import AuditState
-from lib.llm import chat
+from lib.llm import chat, extract_json
 
 RISK_SCORE_THRESHOLD = 0.6
 
@@ -46,7 +46,7 @@ def run_simulator_agent(state: AuditState) -> dict:
         max_tokens=3000,
     )
 
-    board_decision = json.loads(_clean_json(raw))
+    board_decision = json.loads(extract_json(raw))
     risk_score     = board_decision.get("risk_score", 0.5)
     recommendation = board_decision.get("recommendation", "ESCALATE")
 
@@ -71,11 +71,3 @@ def _has_contradictions(state: AuditState) -> bool:
     return bool(compliant_ids & high_risk_ids)
 
 
-def _clean_json(text):
-    text = text.strip()
-    if text.startswith("```"):
-        parts = text.split("```")
-        text = parts[1]
-        if text.startswith("json"):
-            text = text[4:]
-    return text.strip()

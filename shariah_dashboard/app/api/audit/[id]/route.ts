@@ -8,9 +8,9 @@ import { getAudit, listAudits } from '@/lib/db'
 
 export async function GET(
   _request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: { id: string } }
 ) {
-  const { id } = await params
+  const { id } = params
 
   // Special route: /api/audit/list
   if (id === 'list') {
