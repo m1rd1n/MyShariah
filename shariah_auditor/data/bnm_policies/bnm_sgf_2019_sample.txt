@@ -1,0 +1,216 @@
+BANK NEGARA MALAYSIA
+SHARIAH GOVERNANCE FRAMEWORK (SGF) 2019
+AND RELATED POLICY DOCUMENTS
+
+COMPILED REFERENCE — FOR INTERNAL AUDIT USE
+
+═══════════════════════════════════════════════════════════════
+PART A: SHARIAH GOVERNANCE FRAMEWORK 2019 (SGF 2019)
+═══════════════════════════════════════════════════════════════
+
+SECTION 7: SHARIAH COMPLIANCE REQUIREMENTS FOR MURABAHA CONTRACTS
+
+7.1 PROHIBITION OF RIBA (INTEREST)
+
+7.1.1 Any predetermined, guaranteed, or fixed return on a financial
+transaction that is not linked to an actual asset sale or service is
+classified as riba and is strictly prohibited under Islamic law.
+
+7.1.2 In a Murabaha financing arrangement, the profit margin (ribh) must
+be agreed upon and fixed at the time of contract inception. The profit
+rate shall not be subject to revision, adjustment, or indexation to any
+external benchmark including but not limited to:
+  (a) Kuala Lumpur Interbank Offered Rate (KLIBOR)
+  (b) Base Financing Rate (BFR)
+  (c) Overnight Policy Rate (OPR)
+  (d) Any floating rate mechanism
+
+7.1.3 Any clause that provides for a variable, adjustable, or floating
+profit rate in a Murabaha contract shall render the contract non-compliant
+with this Framework. The Bank must fix the selling price (comprising cost
+price plus profit margin) at contract execution, and this price shall
+remain unchanged for the duration of the financing tenure.
+
+7.1.4 The disclosure of cost price and profit margin is mandatory in all
+Murabaha contracts. Non-disclosure or bundling of cost and profit into a
+single undisclosed amount constitutes gharar and is not permitted.
+
+REFERENCE: BNM/RH/PD 029-1, Para 7.1 — Fixed Profit Rate Requirement
+
+
+7.2 CONSTRUCTIVE POSSESSION AND ASSET OWNERSHIP
+
+7.2.1 A fundamental requirement of Murabaha is that the financier (bank)
+must have ownership and bear the risk of the asset before it can be sold
+to the customer. This is known as constructive possession (qabd hukmi).
+
+7.2.2 The bank must demonstrate that it has:
+  (a) Entered into a binding purchase agreement with the supplier
+  (b) Assumed the risk of loss or damage to the asset
+  (c) Held legal or beneficial title to the asset, however briefly
+
+7.2.3 Direct delivery arrangements (where the supplier delivers the asset
+directly to the customer without physical passage through the bank) are
+permissible ONLY if the bank has first completed a valid purchase contract
+with the supplier and has assumed ownership risk prior to the on-sale to
+the customer.
+
+7.2.4 Any arrangement where the customer takes delivery of the asset
+BEFORE the bank has formally purchased it from the supplier constitutes
+bay' al-ma'dum (sale of a non-existent asset) and is void under Shariah.
+
+7.2.5 The sequence of events must be:
+  Step 1: Bank purchases from supplier (or executes purchase agreement)
+  Step 2: Bank assumes ownership risk
+  Step 3: Bank sells to customer via Murabaha contract
+  Step 4: Customer takes delivery
+
+REFERENCE: BNM/RH/PD 029-4, Para 8.2 — Constructive Possession Requirement
+
+
+7.3 PROHIBITION OF GHARAR (EXCESSIVE UNCERTAINTY)
+
+7.3.1 A Murabaha contract must not contain excessive ambiguity or
+uncertainty (gharar fahish) in any of its material terms. All key
+contractual terms must be known, certain, and agreed upon by both parties
+at the time of execution.
+
+7.3.2 Material terms that must be certain and fully disclosed include:
+  (a) The asset being sold — must be clearly identified, described,
+      and in existence at the time of contract
+  (b) Cost price — the price paid by the bank to acquire the asset
+  (c) Profit margin — the bank's profit, expressed as a fixed amount
+      or percentage agreed at contract inception
+  (d) Total selling price — sum of cost price and profit margin
+  (e) Payment schedule — all installment amounts and due dates
+  (f) Tenure — the financing period with clear start and end dates
+
+7.3.3 Vague or open-ended terms that leave any material element to
+future determination constitute gharar and are not permitted.
+
+7.3.4 In cross-border Murabaha transactions, uncertainty arising from
+conflicting legal frameworks or undetermined governing law constitutes
+a form of gharar. The contract must specify a single, clearly identified
+governing law and dispute resolution mechanism.
+
+REFERENCE: BNM/RH/PD 029-3, Para 7.3 — Certainty of Contract Terms
+
+
+7.4 PROHIBITION OF MAYSIR (SPECULATION)
+
+7.4.1 A Murabaha contract must not contain elements that introduce
+speculative outcomes. Contractual obligations must not be contingent
+upon uncertain future events that either party cannot control.
+
+7.4.2 Penalty or acceleration clauses that are triggered by market
+movements, commodity prices, or external indices introduce an element
+of maysir and must be avoided.
+
+
+═══════════════════════════════════════════════════════════════
+PART B: LATE PAYMENT AND TA'WIDH GUIDELINES
+═══════════════════════════════════════════════════════════════
+
+SECTION: BNM/RH/PD 029-7 — COMPENSATION FOR LATE PAYMENT (TA'WIDH)
+
+1. DEFINITION AND PERMISSIBILITY
+
+1.1 Ta'widh refers to compensation that may be imposed on a customer for
+actual losses suffered by the bank as a direct result of the customer's
+late payment or default in a Murabaha financing arrangement.
+
+1.2 Ta'widh is permissible under Shariah subject to strict conditions.
+It must not be used as a profit-generating mechanism for the bank.
+
+2. CONDITIONS FOR IMPOSING TA'WIDH
+
+2.1 The compensation imposed must not exceed the actual financial loss
+incurred by the bank as a result of the late payment. Charging in excess
+of actual loss is equivalent to riba and is prohibited.
+
+2.2 The rate of ta'widh shall not exceed 1% per annum on the outstanding
+amount, or the actual loss incurred, whichever is lower.
+
+2.3 CRITICAL REQUIREMENT — DISPOSITION OF TA'WIDH:
+Any ta'widh collected from the customer MUST be channelled to a charity
+(baitulmal or equivalent charitable fund). It is strictly prohibited for
+the bank to recognise ta'widh as income in its financial statements.
+
+2.4 Any late payment clause that:
+  (a) Sets charges as a percentage accruing monthly (effectively compound)
+  (b) Allows the bank to recognise charges as income or profit
+  (c) Exceeds the actual documented loss of the bank
+  — shall be deemed non-compliant with this guideline and void.
+
+2.5 The contract must explicitly state that late payment charges are for
+compensation purposes only and will be donated to charity.
+
+REFERENCE: BNM/RH/PD 029-7 — Ta'widh and Gharamah Guidelines
+
+
+═══════════════════════════════════════════════════════════════
+PART C: CROSS-BORDER AND MULTI-JURISDICTION REQUIREMENTS
+═══════════════════════════════════════════════════════════════
+
+SECTION: AAOIFI SHARIAH STANDARD NO. 8 — MURABAHA (CROSS-BORDER)
+
+1. JURISDICTIONAL CLARITY
+
+1.1 In Murabaha contracts that involve parties or assets in multiple
+legal jurisdictions, the contract must clearly specify:
+  (a) A single primary governing law
+  (b) A single designated dispute resolution forum
+  (c) The Shariah supervisory authority with oversight responsibility
+
+1.2 Dual jurisdiction clauses that allow either party to elect between
+competing forums at their sole discretion introduce gharar into the
+dispute resolution process and are not permissible.
+
+1.3 Where the applicable governing law of a foreign jurisdiction conflicts
+with Shariah principles, Shariah principles shall prevail. The contract
+must contain an explicit Shariah supremacy clause to this effect.
+
+2. SHARIAH BOARD AUTHORITY IN CROSS-BORDER TRANSACTIONS
+
+2.1 For transactions governed by Malaysian law but involving cross-border
+elements, Bank Negara Malaysia's Shariah Advisory Council (SAC) rulings
+shall be the primary reference for Shariah matters.
+
+2.2 Where AAOIFI standards apply (e.g., transactions with GCC counterparties),
+any conflict between AAOIFI standards and SAC rulings must be resolved by
+escalation to both bodies, not unilaterally by the bank.
+
+REFERENCE: AAOIFI Shariah Standard No. 8, Clauses 1.3 and 2.4
+
+
+═══════════════════════════════════════════════════════════════
+PART D: DEFAULT AND ASSET REPOSSESSION
+═══════════════════════════════════════════════════════════════
+
+SECTION: BNM/RH/PD 029-6 — DEFAULT, ACCELERATION AND REPOSSESSION
+
+1. ACCELERATION OF OUTSTANDING BALANCE
+
+1.1 Upon default, a bank may accelerate the entire outstanding selling
+price (baki harga jualan) subject to the following conditions:
+  (a) The default event is clearly defined in the contract
+  (b) The customer is given reasonable notice and opportunity to remedy
+
+1.2 The accelerated amount must be the original outstanding selling price
+only. The bank may not add additional profit or interest to the accelerated
+amount — doing so constitutes riba.
+
+2. REPOSSESSION AND SHORTFALL RECOVERY
+
+2.1 Upon repossession of the financed asset, the bank must conduct a fair
+market valuation. Any proceeds from the sale of the repossessed asset
+must be applied to reduce the outstanding selling price.
+
+2.2 Recovery of a shortfall (the difference between outstanding selling
+price and repossession proceeds) from the customer's personal assets is
+permissible provided:
+  (a) The shortfall is calculated on the outstanding selling price only
+  (b) No additional charges, penalties, or accrued interest are included
+      in the shortfall calculation
+
+REFERENCE: BNM/RH/PD 029-6 — Default and Recovery Guidelines
